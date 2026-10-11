@@ -1,0 +1,4 @@
+- [x] Import the uploaded site preserving pages, design, assets, and working services.
+- [x] Complete nine-country counts and Netherlands country lists; check footer Payment Details.
+- [x] Verify pages and an enquiry write/read; document missing exports or service blockers.
+- [ ] Import existing enquiry records — blocked on the original site's CSV or JSON export.
