@@ -94,9 +94,9 @@ export const services: Service[] = [
     icon: Globe,
     title: "Import & Export Support",
     tagline: "Take your brand beyond borders",
-    text: "With presence in 8 countries, we help Indian manufacturers reach international buyers and help global brands enter Indian markets — with the paperwork and partners handled properly.",
+    text: "With presence in 9 countries, we help Indian manufacturers reach international buyers and help global brands enter Indian markets — with the paperwork and partners handled properly.",
     points: [
-      "Market access across 8 countries including UAE, USA, UK, Australia and Singapore",
+      "Market access across 9 countries including UAE, USA, UK, Australia, Singapore and Netherlands",
       "Buyer and importer introductions in target countries",
       "Export documentation and compliance guidance",
       "Product positioning for international shelves",
@@ -140,7 +140,7 @@ export const howWeWork: { icon: LucideIcon; step: string; title: string; text: s
 export const stats: { icon: LucideIcon; value: string; label: string }[] = [
   { icon: Store, value: totalStoreFigure, label: "Retail Stores" },
   { icon: MapPin, value: districtFigure, label: "Districts in India" },
-  { icon: Globe, value: "8", label: "Countries" },
+  { icon: Globe, value: "9", label: "Countries" },
   { icon: PackageCheck, value: "End-to-End", label: "Support" },
 ];
 

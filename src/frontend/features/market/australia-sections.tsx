@@ -46,7 +46,7 @@ const strengths = [
 ];
 const advantages = ["Large & Growing Market", "Strong Demand for Indian FMCG", "Stable Trade Relations (ECTA in force since 29 Dec 2022)", "Opportunities in Retail & Distribution", "Focus on Sustainable & Eco-Friendly Products"];
 const stats = [
-  { icon: Globe2, t: "Global Presence", s: "8+ Countries" },
+  { icon: Globe2, t: "Global Presence", s: "9 Countries" },
   { icon: Users, t: "7000+", s: "RETAIL PARTNERS" },
   { icon: Factory, t: "Supporting", s: "Small Manufacturers & SHGs" },
   { icon: Building2, t: "Expanding", s: "Business Opportunities" },

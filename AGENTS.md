@@ -8,3 +8,8 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Preserve the imported TanStack file routes and frontend feature modules so existing URLs and site behavior remain compatible.
+- Keep generated Cloud integration files and runtime configuration from the target project; never overwrite them with another project's bindings.
+- Store enquiries in the Cloud leads table with insert-only public access; private enquiry reads stay privileged.
+- Represent imported bitmap media with asset pointer modules so source imports retain their existing shape.

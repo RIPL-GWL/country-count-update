@@ -149,7 +149,7 @@ export function Story() {
           </p>
           <p className="mt-4 leading-relaxed text-muted-foreground">
             Today, with {totalStoreFigure} retail stores across {districtFigure} districts in India and
-            presence in 8 international markets, we continue to create new
+            presence in 9 international markets, we continue to create new
             growth opportunities for FMCG brands.
           </p>
           <Link

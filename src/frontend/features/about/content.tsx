@@ -23,7 +23,7 @@ export const stats = [
   { icon: Store, value: totalStoreFigure, label: "Retail Stores" },
   { icon: MapPin, value: districtFigure, label: "Districts in India" },
   { icon: Users, value: "Distributor &", label: "Dealer Network" },
-  { icon: Globe, value: "8 Countries", label: "Global Presence" },
+  { icon: Globe, value: "9 Countries", label: "Global Presence" },
 ];
 
 export const purpose = [
@@ -41,7 +41,7 @@ export const solveProblem = [
 export const solveAnswer = [
   `Access to ${totalStoreFigure} participating retail stores across ${districtFigure} districts.`,
   "Distributor and dealer appointment matched to your product and region.",
-  "Domestic expansion plans and global market support across 8 countries.",
+  "Domestic expansion plans and global market support across 9 countries.",
   "Shop advertising and business funding guidance to help brands grow.",
 ];
 
@@ -94,7 +94,7 @@ export const trustPoints = [
   {
     icon: Globe,
     title: "Global Opportunities",
-    text: "Presence in 8 countries.",
+    text: "Presence in 9 countries.",
   },
 ];
 
@@ -107,5 +107,6 @@ export const countries = [
   "Singapore",
   "UK",
   "Europe",
+  "Netherlands",
 ];
 
