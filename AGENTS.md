@@ -14,3 +14,4 @@
 - Store enquiries in the Cloud leads table with insert-only public access; private enquiry reads stay privileged.
 - Represent imported bitmap media with asset pointer modules so source imports retain their existing shape.
 - Keep startup funding presentation in its own frontend feature module while reusing the funding enquiry form, so startup design changes do not alter business funding pages or enquiry storage.
+- Keep Startup with RIPL presentation in a dedicated frontend feature module and direct application actions to the existing startup funding form, so community pages and enquiry storage remain unchanged.
