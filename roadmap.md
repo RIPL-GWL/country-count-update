@@ -4,3 +4,4 @@
 - [ ] Import existing enquiry records — blocked on the original site's CSV or JSON export.
 - [x] Recreate Fund Your Startup from the supplied reference, with uploaded hero and impact images in light and Navratri themes; verify page and controls.
 - [x] Recreate Startup with RIPL from the supplied reference and images in Light and Navratri Special; verify page and links.
+- [ ] Recreate Scale Your Startup from the supplied reference and images in Light and Navratri Special; verify page and links.
