@@ -96,6 +96,45 @@ html.dark .startup-page, html.bome .startup-page, html.moonlight .startup-page {
 @media (width < 64rem) { .ripl-startup h1 { font-size: 48px; }.ripl-startup h2 { font-size: 34px; }.ripl-hero-inner { min-height: 520px; }.ripl-hero-copy { width: 62%; }.ripl-startup .startup-button, .ripl-startup .startup-talk { font-size: 13px; padding-inline: 14px; }.ripl-pathway-grid { gap: 12px; }.ripl-pathway-grid article { padding: 14px; }.ripl-startup h3 { font-size: 18px; }.ripl-sectors .page-shell > div { grid-template-columns: repeat(4, 1fr); }.ripl-hero-note { display: none; } }
 @media (width < 40rem) { .ripl-startup h1 { font-size: 39px; }.ripl-startup h2 { font-size: 32px; }.ripl-hero-inner { min-height: 740px; padding-top: 26px; }.ripl-hero-copy { width: 100%; }.ripl-intro { max-width: 350px; font-size: 16px; }.ripl-hero .startup-backdrop { height: 310px; top: auto; bottom: 0; object-position: 68% center; }.ripl-hero-fade { background: linear-gradient(180deg, var(--startup-paper) 0%, var(--startup-paper) 57%, transparent 75%); }.ripl-stats { margin-top: 24px; }.ripl-stats > div { padding-inline: 6px; }.ripl-stats dt { font-size: 25px; }.ripl-stats dd { font-size: 10px; }.ripl-stats svg { width: 25px; height: 25px; }.ripl-photo-band > .page-shell { min-height: 640px; padding-block: 30px; }.ripl-band-copy, .ripl-transformation .ripl-band-copy { width: 100%; }.ripl-photo-band .startup-backdrop { top: auto; bottom: 0; height: 280px; object-position: 70% center; }.ripl-band-fade { background: linear-gradient(180deg, var(--startup-paper) 50%, transparent 72%); }.ripl-mini-steps { gap: 12px; }.ripl-signposts { top: auto; bottom: 80px; width: 104px; gap: 17px; right: 15px; }.ripl-signposts span { font-size: 11px; }.ripl-pathway-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.ripl-pathway-grid p { font-size: 13px; }.ripl-pathway-grid h3 { font-size: 18px; }.ripl-service-icon { width: 45px; height: 45px; }.ripl-service-icon svg { width: 28px; height: 28px; }.ripl-journey ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 20px; }.ripl-journey li { padding: 25px 12px 15px; }.ripl-journey h3 { font-size: 14px; }.ripl-journey p { font-size: 12px; }.ripl-journey-arrow { display: none; }.ripl-founders > .page-shell { grid-template-columns: 1fr; gap: 24px; }.ripl-founder-photo > img { height: 250px; object-position: 60% center; }.ripl-founder-photo { min-height: 250px; }.ripl-founder-photo ul { width: 112px; padding: 10px; gap: 20px; }.ripl-founder-photo li { font-size: 10px; gap: 5px; }.ripl-founder-photo li svg { width: 20px; height: 20px; }.ripl-ready > .page-shell { min-height: 410px; padding-block: 25px; }.ripl-ready .startup-backdrop { object-position: 65% center; }.ripl-ready::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, color-mix(in oklch, var(--startup-text) 75%, transparent), transparent); }.ripl-ready > .page-shell { z-index: 1; }.ripl-ready p { max-width: 320px; }.ripl-sectors .page-shell > div { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }.ripl-sectors article { display: flex; align-items: center; gap: 10px; text-align: left; }.ripl-sectors svg { margin: 0; flex-shrink: 0; }.ripl-sectors h3 { font-size: 12px; } }
 
+/* Mobile editorial layouts: images own their space, never underneath copy or stats. */
+@media (width < 48rem) {
+  .startup-page :is(.startup-hero, .startup-impact, .startup-commitment, .ripl-hero, .ripl-photo-band, .ripl-ready, .scale-hero, .scale-traction, .scale-ready) { display: flex; flex-direction: column; min-height: 0; }
+  .startup-page :is(.startup-hero, .startup-impact, .startup-commitment, .ripl-hero, .ripl-photo-band, .ripl-ready, .scale-hero, .scale-traction, .scale-ready) > .startup-backdrop { position: static; inset: auto; order: 2; display: block; width: 100%; height: auto; max-height: none; object-fit: contain; object-position: center top; flex-shrink: 0; }
+  .startup-page :is(.startup-hero-fade, .startup-impact-fade, .startup-team-fade, .ripl-hero-fade, .ripl-band-fade, .scale-photo-fade) { display: none; }
+  .startup-page :is(.startup-hero-inner, .startup-impact-inner, .startup-commitment > .page-shell, .ripl-hero-inner, .ripl-photo-band > .page-shell, .ripl-ready > .page-shell, .scale-hero-inner, .scale-traction > .page-shell, .scale-ready > .page-shell) { width: 100%; min-height: 0; padding-block: 28px 24px; }
+  .startup-page :is(.startup-hero-copy, .startup-commitment-copy, .ripl-hero-copy, .ripl-band-copy, .ripl-transformation .ripl-band-copy, .scale-hero-copy, .scale-traction-copy) { width: 100%; max-width: none; }
+  .startup-page h1 { font-size: 36px; line-height: 1.08; }
+  .startup-page h2 { font-size: 30px; line-height: 1.12; }
+  .startup-page .startup-eyebrow { letter-spacing: 0; }
+  .startup-page .startup-actions { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 20px; }
+  .startup-page .startup-actions > a { width: 100%; min-height: 46px; justify-content: center; white-space: normal; height: auto; padding-block: 12px; }
+  .startup-page .startup-greeting { display: block; font-size: 11px; line-height: 1.5; padding: 0; margin-top: 16px; }
+  .startup-page :is(.startup-intro, .ripl-intro, .scale-hero-copy > p:not(.startup-eyebrow):not(.startup-greeting)) { max-width: none; font-size: 15px; line-height: 1.6; }
+  .startup-impact-inner { grid-template-columns: 1fr; gap: 24px; }
+  .startup-numbers { order: 0; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .startup-numbers > div { padding-inline: 5px; }
+  .startup-numbers dt { font-size: 25px; }.startup-numbers dd { font-size: 11px; }
+  .startup-community { margin: 24px 0 0; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: 0; background: transparent; }
+  .startup-benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .startup-benefit-grid article:last-child { display: block; grid-column: auto; }
+  .startup-benefit-grid .startup-benefit-photo { aspect-ratio: 3 / 5; }
+  .startup-benefit-photo img { top: 0; transform: none; }
+  .startup-benefit-body { display: block; padding: 14px 12px; }
+  .startup-benefit-body .startup-icon { margin-bottom: 10px; }
+  .startup-benefit-body h3 { font-size: 15px; }.startup-benefit-body p { font-size: 13px; line-height: 1.5; }
+  .ripl-hero-note, .ripl-signposts { display: none; }
+  .ripl-stats, .scale-stats { width: 100%; max-width: none; margin-top: 24px; padding: 16px 0 0; border-radius: 0; background: transparent; border-top: 1px solid var(--startup-line); }
+  .ripl-stats > div, .scale-stats > div { padding-inline: 5px; }.ripl-stats dt, .scale-stats dt { font-size: 24px; }.ripl-stats dd, .scale-stats dd { font-size: 11px; line-height: 1.4; }
+  .ripl-founder-photo { min-height: 0; }
+  .ripl-founder-photo > img, .scale-founder-image img { width: 100%; height: auto; min-height: 0; object-fit: contain; object-position: center top; }
+  .ripl-founder-photo ul { position: static; width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding: 18px 12px; }
+  .ripl-founder-photo li { font-size: 12px; gap: 8px; }
+  .ripl-ready::after, .scale-ready::after { display: none; }
+  .ripl-ready > .page-shell, .scale-ready > .page-shell { color: var(--startup-text); }
+  .scale-ready .startup-button { background: var(--startup-red); color: var(--startup-paper); }
+  .scale-section-heading { grid-template-columns: 1fr; gap: 16px; }
+}
+
 /* UAE reference palette, isolated so both site themes remain readable. */
 .uae-page {
   --primary: oklch(0.76 0.1 245);
@@ -1122,6 +1161,13 @@ html, body { overflow-x: clip; }
 .footer-family ul, .footer-startups ul { line-height: 1.6; }
 @media (width >= 64rem) {
   .footer-partnerships ul, .footer-company ul, .footer-markets ul { grid-template-columns: 1fr; }
+  .footer-layout { grid-template-areas: "brand company partnerships" "family startups markets" "contact startups markets"; grid-template-rows: auto auto 1fr; }
+  .footer-contact-markets { display: contents; }
+  .footer-brand { grid-area: brand; }.footer-company { grid-area: company; }.footer-partnerships { grid-area: partnerships; }
+  .footer-family { grid-area: family; }.footer-startups { grid-area: startups; }.footer-markets { grid-area: markets; }.footer-contact { grid-area: contact; min-width: 0; }
+}
+@media (width >= 80rem) {
+  .footer-layout { grid-template-areas: "brand company partnerships family startups markets" "brand company partnerships contact startups markets"; grid-template-rows: auto 1fr; row-gap: 28px; }
 }
 @media (width < 48rem) {
   .footer-family { grid-area: family; }
