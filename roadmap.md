@@ -7,3 +7,4 @@
 - [x] Recreate Scale Your Startup from the supplied reference and images in Light and Navratri Special; verify page and links.
 - [ ] Polish all three startup pages on mobile and remove image subject cropping.
 - [ ] Place footer Contact below Our Family on desktop only; verify both layouts.
+- [ ] Keep only Navratri Light, Light and Dark themes; verify theme switching.
