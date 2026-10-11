@@ -1,0 +1,13 @@
+{
+  "source": "code-archive",
+  "capabilities": [
+    {"capability":"code and routes","source":"uploaded TanStack Start project","outcome":"preserve","status":"in_progress","next_action":"Import source and verify all pages"},
+    {"capability":"schema","source":"leads migration and source integrations","outcome":"migrate","status":"in_progress","next_action":"Inspect schema and provision Lovable Cloud"},
+    {"capability":"records","source":"no record export attached","outcome":"migrate","status":"pending","next_action":"Request filtered CSV or JSON exports after preview"},
+    {"capability":"auth identities and authorization","source":"under inspection","outcome":"migrate","status":"pending","next_action":"Determine source auth usage and preserve access boundaries"},
+    {"capability":"assets and stored file bytes","source":"bundled assets and external URLs","outcome":"preserve","status":"in_progress","next_action":"Import bundled media via asset pointers and inspect storage"},
+    {"capability":"providers and secrets","source":"source integrations","outcome":"preserve","status":"in_progress","next_action":"Inspect call sites and verify required services securely"},
+    {"capability":"endpoints callbacks webhooks schedules","source":"source API routes","outcome":"preserve","status":"in_progress","next_action":"Inspect and retain caller contracts"},
+    {"capability":"cutover and verification","source":"unpublished imported site","outcome":"preserve","status":"pending","next_action":"Verify pages and business flows; report external blockers"}
+  ]
+}

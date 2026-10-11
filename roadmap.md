@@ -1,0 +1,3 @@
+- [ ] Import the uploaded site preserving pages, design, assets, and working services.
+- [ ] Complete nine-country counts and Netherlands country lists; check footer Payment Details.
+- [ ] Verify pages and an enquiry write/read; document missing exports or service blockers.
