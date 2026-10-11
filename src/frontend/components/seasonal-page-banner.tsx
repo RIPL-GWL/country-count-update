@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Building2 } from "lucide-react";
+import { ArrowRight, Sun } from "lucide-react";
 import artwork from "@/assets/navratri-dark-vision.jpg.asset.json";
 import { isNavratri, setSiteTheme, useSiteTheme } from "../lib/site-theme";
 import { Button } from "./ui/button";
@@ -9,6 +9,6 @@ export function SeasonalPageBanner({ title }: { title: string }) {
   if (!isNavratri(theme)) return null;
   return <section className="seasonal-page-banner">
     <img src={artwork.url} alt="Navratri lamps and decorated business warehouse" width={1536} height={512} />
-    <div className="page-shell relative"><p>॥ शुभ नवरात्रि ॥</p><h2>{title}</h2><div className="flex flex-wrap gap-3 mt-5"><Button asChild variant="festival"><Link to="/our-services">Explore Services <ArrowRight /></Link></Button><Button variant="festivalOutline" size="icon" title="Original appearance" aria-label="Original appearance" onClick={() => setSiteTheme("bome")}><Building2 /></Button></div></div>
+    <div className="page-shell relative"><p>॥ शुभ नवरात्रि ॥</p><h2>{title}</h2><div className="flex flex-wrap gap-3 mt-5"><Button asChild variant="festival"><Link to="/our-services">Explore Services <ArrowRight /></Link></Button><Button variant="festivalOutline" size="icon" title="Light theme" aria-label="Light theme" onClick={() => setSiteTheme("light")}><Sun /></Button></div></div>
   </section>;
 }
