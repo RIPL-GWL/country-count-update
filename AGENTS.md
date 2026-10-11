@@ -13,3 +13,4 @@
 - Keep generated Cloud integration files and runtime configuration from the target project; never overwrite them with another project's bindings.
 - Store enquiries in the Cloud leads table with insert-only public access; private enquiry reads stay privileged.
 - Represent imported bitmap media with asset pointer modules so source imports retain their existing shape.
+- Keep startup funding presentation in its own frontend feature module while reusing the funding enquiry form, so startup design changes do not alter business funding pages or enquiry storage.
